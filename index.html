@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>多轮对话助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>多轮对话助手</h1>
+
+    <div class="key-input">
+      <label for="apiKey">API Key:</label>
+      <input type="password" id="apiKey" placeholder="输入你的阿里云百炼 API Key">
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="input-area">
+      <textarea id="userInput" placeholder="请输入消息..."></textarea>
+      <button id="sendBtn">发送</button>
+      <button id="clearBtn">清空</button>
+    </div>
+
+    <p id="status" class="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

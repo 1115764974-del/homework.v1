@@ -1,0 +1,103 @@
+/* 页面布局 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 标题 */
+h1 {
+  text-align: center;
+  color: #2f3640;
+}
+
+/* API Key 输入 */
+.key-input {
+  margin-bottom: 10px;
+}
+.key-input input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #dcdde1;
+}
+
+/* 聊天框 */
+.chat-box {
+  height: 350px;
+  overflow-y: auto;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f1f2f6;
+  margin-bottom: 10px;
+}
+
+/* 聊天消息 */
+.message {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background: #4cd137;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message.bot {
+  background: #dcdde1;
+  color: #2f3640;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* 输入区 */
+.input-area {
+  display: flex;
+  gap: 5px;
+}
+.input-area textarea {
+  flex: 1;
+  height: 50px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #dcdde1;
+  resize: none;
+}
+.input-area button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #0097e6;
+  color: white;
+  transition: 0.2s;
+}
+.input-area button:hover {
+  background: #40739e;
+}
+
+/* 状态提示 */
+.status {
+  text-align: center;
+  color: #e84118;
+  margin-top: 10px;
+}
